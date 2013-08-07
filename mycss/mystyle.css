@@ -1,0 +1,10 @@
+﻿body {
+}
+header, section, footer {
+    border: 1px solid red;
+}
+/*.nav {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid black;
+}*/

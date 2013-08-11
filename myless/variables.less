@@ -44,7 +44,7 @@
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          24px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -222,15 +222,15 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    50px;
-@navbar-color:                     #777;
+@navbar-height:                    59px;
+@navbar-color:                     #fff;
 @navbar-bg:                        #eee;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 // Navbar links
-@navbar-link-color:                #777;
+@navbar-link-color:                #f2f3ff; //#777
 @navbar-link-hover-color:          #333;
 @navbar-link-hover-bg:             transparent;
 @navbar-link-active-color:         #555;
@@ -239,7 +239,7 @@
 @navbar-link-disabled-bg:          transparent;
 
 // Navbar brand label
-@navbar-brand-color:               @navbar-link-color;
+@navbar-brand-color:               #fff; 
 @navbar-brand-hover-color:         darken(@navbar-link-color, 10%);
 @navbar-brand-hover-bg:            transparent;
 
@@ -247,7 +247,7 @@
 @navbar-toggle-hover-bg:           #ddd;
 @navbar-toggle-icon-bar-bg:        #ccc;
 @navbar-toggle-border-color:       #ddd;
-
+@navbar-background-image:			url('../images/menu-backgr.png');
 
 // Inverted navbar
 //

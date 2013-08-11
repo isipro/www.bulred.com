@@ -1,10 +1,165 @@
-﻿body {
+﻿html {
+    
+}
+
+body {
+    background-image:url('../images/batthern.png');
+    border: 0px solid yellow;
 }
 header, section, footer {
-    border: 1px solid red;
+    border: 0px solid red;
+     
+}
+header {
+    margin-bottom: 10px;
 }
 /*.nav {
     display: inline-block;
     width: 80%;
     border: 1px solid black;
 }*/
+
+section {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    height: 70%;
+    width: 100%;
+    border: 0px solid green;
+    display: inline-block;
+
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 9%;
+    display: inline-block;
+    width: 100%;
+    background-image: url('../images/grey-footer-background.jpg');
+    border-top: 3px solid #a67251;
+}
+
+.bulred-logo {
+    display: inline-block;
+    margin-top: -1px;
+    float: left;
+}
+
+.menu-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 0px solid yellow;
+    margin-right: 3px;
+    vertical-align:middle;
+}
+#bulred_home {
+
+    background: url('../images/menu-icons-sprite.png') 0 0  no-repeat;
+    
+   
+}
+#bulred_services {
+
+    background: url('../images/menu-icons-sprite.png') -32px 0 no-repeat;
+}
+#bulred_prices {
+
+    background: url('../images/menu-icons-sprite.png') -64px 0 no-repeat;
+}
+#bulred_about {
+
+    background: url('../images/menu-icons-sprite.png') -96px 0 no-repeat;
+}
+#bulred_contacts {
+
+    background: url('../images/menu-icons-sprite.png') -131px 0 no-repeat;
+}
+
+@media (max-width: 1054px) {
+
+    .navbar-nav li a{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .hidden-icon {
+        width: 0px;
+        display: hidden;
+    }
+}
+/*
+.test {
+    height: 200px;
+    border: 1px solid black;
+    background-image:url('../images/batthern.png');
+}
+
+    */
+.carousel, .carousel-inner, .item{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: 0px solid orange;
+    overflow: hidden;
+}
+.item{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;    
+    background-size: cover;
+}
+
+/* Image Gallery - (Bootstrap Carousel - modified)*/
+div.item > div.carousel-image{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#carousel-img-1{
+    background: url('../gallery/clean-home-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+#carousel-img-2{
+    background: url('../gallery/marbal-floor-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#carousel-img-3{
+    background: url('../gallery/wooden-floor-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#carousel-img-4{
+    background: url('../gallery/dining-room-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#carousel-img-5{
+    background: url('../gallery/gardan-and-pool-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#carousel-img-6{
+    background: url('../gallery/bathroom-fixed.jpg') no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

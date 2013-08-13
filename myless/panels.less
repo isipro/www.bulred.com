@@ -19,6 +19,11 @@
   border: 1px solid @panel-border;
   border-radius: @panel-border-radius;
   .box-shadow(0 1px 1px rgba(0,0,0,.05));
+  font-family: @font-family-serif;
+
+  
+
+
 
   // List groups in panels
   .list-group {
@@ -38,6 +43,27 @@
     }
   }
 }
+
+// Custom panel for the price.html
+  .panel-pricelist {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  z-index: 5;
+  
+  background: url('../images/flower-menu.png') -2px 0 no-repeat;
+  background-color: @panel-bg;
+  border: 1px solid @panel-border;
+  border-radius: @panel-border-radius;
+  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+  }
+
+
 
 // Optional heading
 .panel-heading {
@@ -83,7 +109,7 @@
 	
   }
   .bulred-panel-content{
-	font-size: (@font-size-base * 0.7);
+	font-size: (@font-size-base * 0.8);
 	
 	margin-left: 80px;
 

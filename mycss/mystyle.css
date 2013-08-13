@@ -93,6 +93,30 @@ footer {
     background: url('../images/menu-icons-sprite.png') -131px 0 no-repeat;
 }
 
+
+/* Price List*/
+
+.pricelist{
+    height: 360px;
+    overflow: auto;    
+}
+
+@media (min-width: 1396px) {
+
+    .panel {
+        right: 280px;
+        top: 75px;
+        
+    }
+
+    .pricelist{
+    height: 560px;
+    overflow: auto;    
+}
+
+}
+
+
 @media (max-width: 1054px) {
 
     .navbar-nav li a{

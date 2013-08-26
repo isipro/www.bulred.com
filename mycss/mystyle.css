@@ -44,7 +44,7 @@ footer {
 
 .bulred-logo {
     display: inline-block;
-    margin-top: -1px;
+    margin-top: 1px;
     float: left;
 }
 
@@ -220,5 +220,29 @@ div.item > div.carousel-image{
 }
 .createdBy > a{
     text-decoration: none;
+    color: white;
+}
+
+/* Language Bar*/
+.lang_bar {
+    position: absolute;
+    top: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Verdana;
+    padding-right: 12px;
+}
+#lang_eng {
+    right: 25px;
+}
+#lang_bg {
+    right: 1px;
+}
+.lang_current {
+    color: grey;
+    font-weight: 600;
+}
+a.:hover {
     color: white;
 }

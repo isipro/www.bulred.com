@@ -243,6 +243,9 @@ div.item > div.carousel-image{
     color: grey;
     font-weight: 600;
 }
-a.:hover {
+a.lang_bar:hover {
     color: white;
+}
+.current_page {
+    color: #333;
 }

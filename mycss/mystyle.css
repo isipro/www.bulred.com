@@ -136,6 +136,19 @@ footer {
     }
 
 }
+
+@media (max-width: 768px) {
+    .hidden-icon {
+        width: 0px;
+        display: none;
+
+    }
+    .panel {
+        margin: auto;
+        width: 80%;
+    }
+
+}
 /*
 .test {
     height: 200px;
@@ -246,6 +259,6 @@ div.item > div.carousel-image{
 a.lang_bar:hover {
     color: white;
 }
-.current_page {
+nav li a.current_page {
     color: #333;
 }

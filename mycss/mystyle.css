@@ -154,10 +154,9 @@ footer {
         width: 80%;
     }
 
-    /*.pricelist {
-        width: 90%;
-        overflow: auto;
-    }*/
+    .bulred-logo {
+        display: none;
+    }
 }
 /*
 .test {

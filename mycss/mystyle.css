@@ -1,15 +1,15 @@
 ﻿html {
-    
 }
 
 body {
-    background-image:url('../images/batthern.png');
+    background-image: url('../images/batthern.png');
     border: 0px solid yellow;
 }
+
 header, section, footer {
     border: 0px solid red;
-     
 }
+
 header {
     margin-bottom: 10px;
     border: 0px solid red;
@@ -28,7 +28,6 @@ section {
     width: 100%;
     border: 0px solid green;
     display: inline-block;
-
 }
 
 footer {
@@ -53,13 +52,12 @@ footer {
 
 .bulred-logo-menu {
     font-family: Calibri;
-    
     margin-top: -5px;
 }
 
 .bulred-slogan {
     font-family: Gabriola;
-    letter-spacing: 6px
+    letter-spacing: 6px;
 }
 
 .menu-icon {
@@ -68,37 +66,39 @@ footer {
     height: 32px;
     border: 0px solid yellow;
     margin-right: 3px;
-    vertical-align:middle;
+    vertical-align: middle;
 }
+
 #bulred_home {
-
-    background: url('../images/menu-icons-sprite.png') 0 0  no-repeat;
-    
-   
+    background: url('../images/menu-icons-sprite.png') 0 0 no-repeat;
 }
-#bulred_services {
 
+#bulred_services {
     background: url('../images/menu-icons-sprite.png') -32px 0 no-repeat;
 }
-#bulred_prices {
 
+#bulred_prices {
     background: url('../images/menu-icons-sprite.png') -64px 0 no-repeat;
 }
-#bulred_about {
 
+#bulred_about {
     background: url('../images/menu-icons-sprite.png') -96px 0 no-repeat;
 }
-#bulred_contacts {
 
+#bulred_contacts {
     background: url('../images/menu-icons-sprite.png') -131px 0 no-repeat;
 }
 
 
 /* Price List*/
 
-.pricelist{
-    height: 360px;
-    overflow: auto;    
+.pricelist {
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 360px;
+    min-width: 700px;
+    width: 70%;
 }
 
 @media (min-width: 1396px) {
@@ -106,37 +106,57 @@ footer {
     .panel {
         right: 280px;
         top: 75px;
-        
     }
 
-    .pricelist{
-    height: 560px;
-    overflow: auto;    
-}
-
+    /*.pricelist {
+        height: 560px;
+        width: 90px;
+        overflow: auto;
+    }*/
 }
 
 
 @media (max-width: 1054px) {
 
-    .navbar-nav li a{
+    .navbar-nav li a {
         font-size: 20px;
     }
-
 }
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
     .hidden-icon {
         width: 0px;
         display: none;
-
     }
+
     .panel {
         right: 80px;
     }
 
+    .navbar-nav li a {
+        font-size: 18px;
+    }
 }
-/*
+
+
+
+@media (max-width: 768px) {
+    .hidden-icon {
+        width: 0px;
+        display: none;
+    }
+
+    .panel {
+        margin: auto;
+        width: 80%;
+    }
+
+    /*.pricelist {
+        width: 90%;
+        overflow: auto;
+    }*/
+}
+    /*
 .test {
     height: 200px;
     border: 1px solid black;
@@ -144,81 +164,97 @@ footer {
 }
 
     */
-.carousel, .carousel-inner, .item{
-    display: inline-block;
-    height: 100%;
+    .carousel, .carousel-inner, .item {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border: 0px solid orange;
+        overflow: hidden;
+    }
+
+    .item {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        background-size: cover;
+    }
+
+    /* Image Gallery - (Bootstrap Carousel - modified)*/
+    div.item > div.carousel-image {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-1 {
+        background: url('../gallery/clean-home-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-2 {
+        background: url('../gallery/marbal-floor-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-3 {
+        background: url('../gallery/wooden-floor-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-4 {
+        background: url('../gallery/dining-room-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-5 {
+        background: url('../gallery/gardan-and-pool-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    #carousel-img-6 {
+        background: url('../gallery/bathroom-fixed.jpg') no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+
+
+    .createdBy {
+        position: absolute;
+        right: 9px;
+        bottom: 9px;
+        font-family: Buxton Sketch;
+        color: white;
+        font-size: 15px;
+    }
+
+        .createdBy > a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+table {
     width: 100%;
-    border: 0px solid orange;
-    overflow: hidden;
-}
-.item{
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;    
-    background-size: cover;
 }
 
-/* Image Gallery - (Bootstrap Carousel - modified)*/
-div.item > div.carousel-image{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#carousel-img-1{
-    background: url('../gallery/clean-home-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-
-}
-#carousel-img-2{
-    background: url('../gallery/marbal-floor-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#carousel-img-3{
-    background: url('../gallery/wooden-floor-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#carousel-img-4{
-    background: url('../gallery/dining-room-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#carousel-img-5{
-    background: url('../gallery/gardan-and-pool-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-#carousel-img-6{
-    background: url('../gallery/bathroom-fixed.jpg') no-repeat;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
-
-
-.createdBy {
-    position: absolute;
-    right: 9px;
-    bottom: 9px;
-    font-family: Buxton Sketch;
-    color: white;
-    font-size: 15px;
-}
-.createdBy > a{
-    text-decoration: none;
-    color: white;
+img {
+    border: none;
 }
